@@ -1,0 +1,139 @@
+#products-nav {
+	position: relative;
+	z-index: 10;
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	
+.product {
+	position: relative;
+	margin-top: 10px;
+}
+.product h2 {
+	margin: 0;
+}
+
+.products-landing,
+.product header {
+	max-width: 660px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+	color: #c6ecfc; }
+
+.products-landing-image-container {
+	position: absolute;
+	top: 100px;
+	left: 0;
+}	
+	
+.products-landing-image {
+	position: absolute;
+	display: inline-block;
+	height: 25vw;
+}
+	.products-landing-image:after {
+	  content: ""; 
+	  position: absolute; 
+	  top: 0; 
+	  right: 0; 
+	  bottom: 0; 
+	  left: 0;
+	}
+
+	.products-landing-image.ski {
+		left: 80vw;	
+		top: 0;
+	}
+	.products-landing-image.snowboard {
+		left: 75vw;	
+		top: 30vw;
+	}
+
+	.products-landing-image object {
+		height: 25vw; }
+		
+	.products-landing-click-image {
+
+	}
+
+.product header,
+.product button {
+	visibility: hidden;
+}
+	.current .product header,
+	.current .product button {
+		visibility: visible; }
+
+.preview {
+	position: relative;
+	height: 20vw; 
+}
+
+.preview li {
+ 	position: absolute; 
+	top: 0; 
+	left: 0; 
+	visibility: hidden; }
+	
+	.preview .current {
+		visibility: visible; }
+
+
+.products-swatches {
+	text-align: center;
+}
+	.products-swatches ul {
+		list-style: none; }
+
+	.products-swatches-pager a {
+		width: 5vw;
+		height: 5vw;
+		display: inline-block;
+		margin-left: 3vw;
+		text-align: center;
+	}
+
+		.products-swatches-pager a:first-child {
+			margin-left: 0;
+		}
+
+		.products-swatches-pager img {
+			width: 100%;
+			height: 100%;
+		}
+
+.configure {
+	display: none;
+	background: transparent;
+	text-transform: uppercase;
+	border: 1px solid #13b6ea;
+	height: 40px;
+	width: 140px;
+	color: #13b6ea;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.ui-btn-inner {
+	display: none;
+}
+
+/***** responsive *****/
+
+@media (max-width: 320px) and (orientation: portrait) {
+	.product header {
+		width: 240px; }
+
+
+	.products-swatches-pager a {
+		width: 25px;
+		height: 25px;
+		margin-left: 10px;
+	}	
+	
+	
+}	

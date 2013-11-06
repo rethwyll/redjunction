@@ -1,0 +1,62 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * EU Cookie Law module CSS stylesheet
+ *  
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    7d951df02835d7dad4921fa07742d983e37f41b3, v2 (xcart_4_5_1), 2012-06-06 12:57:18, main.css, mccornic
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+/**
+ * Alternative styles for common elements 
+ */
+
+div#eucl_panel {
+  border: 0px solid #AAA;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 10px 15px 10px 15px;
+	display: none;
+	vertical-align: middle;
+  position: relative;
+  z-index: 100000;
+  background: #140407;
+  color: #FFFFFF;
+}
+div#eucl_panel td#eucl_panel_msg {
+	font-weight: normal;
+	font-size: 12px;
+}
+div#eucl_panel td#eucl_panel_btn {
+	text-align: right;
+	padding: 0px 0px 0px 20px;
+  width: 220px;
+  white-space: nowrap;
+}
+div#eucl_panel td#eucl_panel_countdown {
+	padding: 0px 0px 0px 10px;
+	font-size: 18px;
+	vertical-align: middle;
+  width: 60px;
+  white-space: nowrap;
+  text-align: right;
+  color: #b48b9f;
+}
+
+div.save_close_btn {
+	float: right;
+  padding-right: 20px;
+}
+
+td#eucl_desc ul {
+  margin: 0px;
+}
+
+div.eucl_dialog {
+  padding: 10px;
+  color: #A5A5A5;
+}

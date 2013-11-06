@@ -1,0 +1,65 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * Override jquery ui styles than cannot be modified by themeroller
+ * 
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    39c540a96ad32e5dca6de9d1496932f439ffb34d, v4 (xcart_4_6_1), 2013-09-09 08:25:53, jquery_ui.css, random
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+.ui-dialog .ui-dialog-titlebar {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  background: #f2f2f2;
+  color: #000;
+  border: 0;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 7px;
+}
+.ui-dialog .ui-dialog-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 4px 16px 4px 0;
+}
+.ui-dialog {
+  -webkit-box-shadow: 0 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 0 10px rgba(0,0,0,0.3);
+  border-width: 0;
+  padding: 7px;
+}
+.ui-dialog.ui-corner-all {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.ui-dialog.type-w .ui-dialog-titlebar {
+  background: #fcf8e3;
+  color: #c49f60;
+  border-bottom-color: #f3edcf;
+}
+.ui-dialog.type-i .ui-dialog-titlebar {
+  background: #d9edf7;
+  color: #3a87ad;
+  border-bottom-color: #b3d2e0;
+}
+.ui-dialog.type-e .ui-dialog-titlebar {
+  background: #f2dede;
+  color: #b94a48;
+  border-bottom-color: #dbbabe;
+}
+
+.ui-dialog-titlebar .ui-icon {
+  background-image: url(../lib/jqueryui/images/ui-icons_222222_256x240.png);
+}
+.ui-dialog .ui-state-default {
+  border: 1px solid #b8b8b8;
+  font-weight: normal;
+  color: #3b3b3b;
+}

@@ -1,0 +1,466 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * Advanced Customer Reviews module CSS stylesheet
+ *  
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    23663ab722599bb67140d607ae2900b6d69f951d, v2 (xcart_4_5_3), 2012-09-13 13:13:01, main.css, random
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+/* ==============================================================================
+ * 
+ * Review style (in reviews list)
+ *
+ * ==============================================================================*/
+
+div.acr-review {
+  color: #58595B;
+}
+
+div.acr-review .acr-author {
+  width: 80%;
+  float: left;
+  text-align: left;
+  padding-bottom: 3px;
+}
+
+div.acr-review .acr-date {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+
+div.acr-review .acr-rating {
+  float: none;
+  padding-bottom: 9px;
+  padding-top: 5px;
+}
+
+div.acr-review .acr-verified {
+  color: #C77400; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div.acr-reviews-list div.acr-line {
+  border-bottom: 1px solid #D9D9D9;
+  width: 100%;
+  clear: left;
+  margin: 5px 0 12px 0;
+}
+
+
+/*==============================================================================
+ * 
+ * General product rating container style (for multicolumns products list 
+ * and simple products list/product page)
+ *
+ * ==============================================================================*/
+
+.acr-general-product-rating {
+  padding-top: 5px;
+}
+
+.acr-general-product-rating table {
+  padding: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+  width: 10%;
+}
+
+.acr-general-product-rating table.acr-container-multicolumns {
+  width: 100%;
+}
+
+table.acr-container-multicolumns td.left-indent,
+table.acr-container-multicolumns td.right-indent {
+  width: 30%;
+}
+
+table.acr-container td.left-indent,
+table.acr-container td.right-indent {
+  display: none;
+}
+
+table.acr-container-multicolumns td,
+table.acr-container td {
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.acr-general-product-rating td.rating-box {
+  text-align: right;  
+}
+
+.acr-general-product-rating td.dropdown-button {
+  cursor: pointer;
+  padding-top: 3px;
+  padding-left: 4px;
+  padding-right: 3px;
+  width: 1%;
+}
+
+.acr-general-product-rating td.comment {
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 4px;
+}
+
+.acr-static-popup-container {
+  text-align: left;
+}
+
+.acr-popup-internal-container {
+  z-index: 4500;
+  border: 1px solid #BCBCBC;
+  padding: 5px;
+  display: block;
+  background: #FFFFFF;
+  position: absolute !important;
+  width: 195px;
+}
+
+.acr-popup-internal-container .progress {
+  background: transparent url(../../images/progress.gif) repeat-x left top;
+  height: 11px;
+}
+
+
+/* ==============================================================================
+ *
+ * Detailed product ratings style
+ *
+ * ==============================================================================*/
+
+table.acr-detailed-product-ratings {
+  width: 190px;
+  color: #58595B;
+  border-spacing: 1px;
+}
+
+table.acr-detailed-product-ratings td {
+  margin: 1px;
+  padding: 1px;
+}
+
+table.acr-detailed-product-ratings tr.no-reviews td {
+  color: #818891;
+}
+
+table.acr-detailed-product-ratings tr.selected td {
+  font-weight: bold;
+}
+
+table.acr-detailed-product-ratings .acr-rating-bar {
+  width: 80px;
+  background-color: #FFEAC1;
+}
+
+table.acr-detailed-product-ratings .acr-rating-bar-full {
+  float: left;
+  background-color: #FFA62C;
+  height: 15px;
+}
+
+table.acr-detailed-product-ratings td.acr-comment {
+  text-align: right;
+}
+
+
+/* ==============================================================================
+ *
+ * Useful block style
+ *
+ * ==============================================================================*/
+
+.acr-useful-box {
+  color: #818891;
+  text-align: right;
+  font-size: 10px;
+  padding: 10px 0px 2px;
+}
+
+.acr-useful-box a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.acr-useful-box .wait {
+  padding-right: 5px;
+  display: none;
+  z-index: 1500;
+  overflow: visible;
+  width: 15px;
+}
+
+a.useful-yes:link,
+a.useful-yes:visited,
+a.useful-yes:hover,
+a.useful-yes:active {
+  color: #298705;
+}
+
+a.useful-no:link,
+a.useful-no:visited,
+a.useful-no:hover,
+a.useful-no:active {
+  color: #8D3634;
+}
+
+a.pseudo-link:link, 
+a.pseudo-link:visited,  
+a.pseudo-link:hover,  
+a.pseudo-link:active {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  padding: 0px;
+}
+
+a.useful-voted:link,
+a.useful-voted:visited,
+a.useful-voted:hover {
+  text-decoration: none;
+  background: #BCBCBC;
+  color: #FFFFFF;
+  padding: 1px 2px 1px 2px;
+}
+
+span.useful-voted {
+  background: #BCBCBC;
+  color: #FFFFFF;
+  padding: 1px 2px 1px 2px;
+}
+
+
+/* ==============================================================================
+ *
+ * Reviews list style
+ * 
+ * ==============================================================================*/
+
+.acr-reviews-list {
+  padding-top: 15px;
+}
+
+.acr-reviews-list .acr-tab {
+  padding: 0px;
+}
+
+.acr-product-info .acr-image {
+  float: left;
+  position: relative;
+  padding: 3px 20px 3px 10px;
+}
+
+.acr-product-info .acr-details {
+  border: 0 none;
+  padding-left: 30px;
+  vertical-align: top;
+}
+
+.acr-product-tab-summary {
+  float: none;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.acr-reviews-order {
+  color: #A0866E;
+  font-weight: bold;
+}
+
+.acr-reviews-order a {
+  font-weight: normal;
+}
+
+
+/* ==============================================================================
+ * 
+ * Customer Reviews Menu box style
+ *
+ * ==============================================================================*/
+.menu-reviews-section img.icon {
+  background: url("../../images/dingbats_categorie.gif") no-repeat scroll 0 0 transparent;
+}
+
+.menu-reviews-section div.acr-item {
+  margin-bottom: 10px;
+}
+
+.menu-reviews-section div.acr-image {
+  float: left;
+  padding-bottom: 5px;
+  padding-right: 8px;
+}
+
+.menu-reviews-section .acr-product-title {
+  padding-bottom: 5px;
+}
+
+.menu-reviews-section .acr-rating {
+  padding-top: 5px;
+}
+
+.menu-reviews-section .acr-author {
+  font-weight: bold;
+  text-align: right;
+  font-size: 10px;
+}
+
+.menu-reviews-section .acr-date {
+  font-weight: normal;
+  text-align: right;
+  padding-bottom: 2px;
+  font-size: 10px;
+}
+
+.menu-reviews-section .acr-comment {
+  font-weight: normal;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 9px;
+}
+
+.menu-reviews-section .acr-link {
+  font-weight: normal;
+  text-align: left;
+}
+
+.menu-reviews-section div.acr-line {
+  border-bottom: 1px solid #D9D9D9;
+  width: 100%;
+  clear: left;
+  margin: 5px 0 12px 0;
+}
+
+
+/* ==============================================================================
+ *
+ * Search reviews page style
+ *
+ * ==============================================================================*/
+.acr-search-results {
+  padding-top: 5px;
+  padding-left: 4px;
+}
+
+.acr-search-reviews-sort-bar {
+  text-align: right;
+  padding-bottom: 8px;
+  border-bottom: 1px #CCCCCC solid;
+}
+
+.acr-search-sort-delimiter {
+  padding-right: 2px;
+  padding-left: 2px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.acr-search-sort-selected {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+a.acr-search-sort-not-selected:link,
+a.acr-search-sort-not-selected:visited,
+a.acr-search-sort-not-selected:hover,
+a.acr-search-sort-not-selected:active {
+  font-weight: normal;
+  font-size: 12px;
+  font-style: normal;
+}
+.acr-search-sort-cell-no-direction {
+  font-size: 12px;
+  line-height: 12px;
+  font-style: normal;
+}
+
+/* ==============================================================================
+ *
+ * Stars rating style
+ *
+ * ==============================================================================*/
+.acr-vote-bar a,
+.acr-vote-bar span,
+.acr-vote-bar a img,
+.acr-vote-bar span img
+{
+  display: block;
+  margin: 0px;
+  width: 22px;
+  height: 20px;
+  overflow: hidden;
+  background: transparent url(../../images/stars.png) no-repeat 1px top;
+  float: left;
+}
+
+.acr-vote-bar span.full,
+.acr-vote-bar span img
+{
+  background-position: 1px -20px;
+}
+
+.acr-allow-add-rate a {
+  background-position: 1px -40px;
+}
+
+.acr-allow-add-rate a.full,
+.acr-allow-add-rate a img
+{
+  background-position: 1px -60px;
+}
+
+.acr-allow-add-rate a:hover,
+.acr-allow-add-rate a.over
+{
+  background-position: 1px -80px;
+}
+
+table.acr-data-table td.data-name {
+  text-align: right;
+  font-weight: normal;
+  width: 30%;
+}
+
+/* ==============================================================================
+ *
+ * Other common style
+ *
+ * ==============================================================================*/
+.acr-reviews-add table td {
+  padding: 2px;
+}
+
+.acr-reason {
+  color: #818891;
+}
+
+.printable .acr-rating-box {
+  display: none;
+}
+
+.printable .acr-general-product-rating {
+  display: none;
+}
+
+div.clearing {
+  clear: both;
+}
+
+.acr-rating-box.message span {
+  display: block;
+  padding-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.acr-review-not-allowed {
+  color: #CCCCCC;
+}

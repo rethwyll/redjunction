@@ -1,0 +1,74 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * On Sale module CSS stylesheet
+ *  
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    1f6152e37b8537396ee173ec0e4d1364bfc40fb9, v2 (xcart_4_6_0), 2013-05-20 17:39:12, main.css, random
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.on-sale-image-position-product {
+  position: absolute;
+  z-index: 10;
+  right: 5px;
+  bottom: 5px;
+}
+
+.on-sale-image-position-products {
+  position: absolute;
+  z-index: 10;
+  right: 22px;
+  bottom: 22px;
+}
+
+.on-sale-image-position-products_t {
+  position: absolute;
+  z-index: 10;
+  right: 7px;
+  bottom: 7px;
+}
+
+.products .image .on-sale-image-position-products img,
+.products .image .on-sale-image-position-products_t img {
+  border: 0;
+}
+
+.on_sale_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.on-sale-icon {
+    bottom: 5px;
+    overflow: hidden;
+    position: absolute;
+    right: 2px;
+    width: 48px;
+    height: 48px;
+}
+
+.on-sale-icon-with-so {
+    top: 5px;
+    overflow: hidden;
+    position: absolute;
+    right: 2px;
+    width: 48px;
+    height: 48px;
+}
+
+.product-details .image .image-box .on-sale-icon img,
+.product-details .image .image-box .on-sale-icon-with-so img {
+    border: 0 none;
+}

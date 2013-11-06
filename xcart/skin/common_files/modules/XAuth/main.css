@@ -1,0 +1,287 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * RPX styles
+ *
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com>
+ * @version    3ed6e3a60c9611d7e29d418bea33b85962aff70a, v2 (xcart_4_5_5), 2012-12-24 20:16:24, main.css, aim
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+/**
+ * Common
+ */
+button.xauth-button {
+  margin-left: 10px;
+}
+
+.xauth-or {
+  background: transparent url(images/or_bg.png) no-repeat center center;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.xauth-auth td.xauth-popup,
+.xauth-auth td.xauth-or,
+.xauth-auth td.xauth-form
+{
+  vertical-align: middle;
+}
+
+.xauth-auth td.xauth-or {
+  padding: 0px 38px;
+}
+
+.xauth-vertical {
+  width: auto;
+}
+
+.xauth-vertical td.xauth-or {
+  padding: 20px 0px;
+  text-align: center;
+  background-image: none;
+}
+
+.xauth-vertical td.xauth-form {
+  padding-left: 38px;
+}
+
+.xauth-dialog {
+  position: absolute;
+  z-index: 100000;
+  padding: 10px;
+}
+
+.xauth-bg-loading {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 240px;
+  font-size: 2em;
+}
+
+.xauth-overlay {
+  position: relative;
+  height: 100%;
+  width: 400px;
+}
+
+/**
+ * Register page
+ */
+.xauth-register-link {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
+
+.xauth-register .data-name {
+  text-align: right;
+  vertical-align: top;
+}
+
+.xauth-register ul {
+  padding: 0px;
+  margin: 0px;
+  width: 420px;
+}
+
+.xauth-register ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  background: transparent none;
+}
+
+.xauth-register ul li span {
+  display: inline-block;
+  width: 230px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.xauth-register ul li a.remove {
+  display: inline-block;
+  background: transparent url(../../images/delete_cross.gif) no-repeat left top;
+  width: 9px;
+  height: 9px;
+  vertical-align: middle;
+}
+
+/* Icons */
+a.xauth-account {
+  vertical-align: middle;
+}
+
+a.xauth-account img {
+  width: 16px;
+  height: 16px;
+  background: transparent url(images/icons.png) no-repeat 0px 0px;
+  padding: 0px 2px;
+}
+
+a.xauth-acc-twitter img {
+  background-position: 0px -16px;
+}
+
+a.xauth-acc-myspace img {
+  background-position: 0px -32px;
+}
+
+a.xauth-acc-live img {
+  background-position: 0px -48px;
+}
+
+a.xauth-acc-linkedin img {
+  background-position: 0px -256px;
+}
+
+a.xauth-acc-paypal img {
+  background-position: 0px -272px;
+}
+
+a.xauth-acc-google img {
+  background-position: 0px -80px;
+}
+
+a.xauth-acc-yahoo img {
+  background-position: 0px -64px;
+}
+
+a.xauth-acc-aol img {
+  background-position: 0px -112px;
+}
+
+a.xauth-acc-openid img {
+  background-position: 0px -96px;
+}
+
+a.xauth-acc-blogger img {
+  background-position: 0px -192px;
+}
+
+a.xauth-acc-flickr img {
+  background-position: 0px -176px;
+}
+
+a.xauth-acc-hyves img {
+  background-position: 0px -240px;
+}
+
+a.xauth-acc-lj img {
+  background-position: 0px -128px;
+}
+
+a.xauth-acc-myopenid img {
+  background-position: 0px -144px;
+}
+
+a.xauth-acc-netlog img {
+  background-position: 0px -160px;
+}
+
+a.xauth-acc-wp img {
+  background-position: 0px -224px;
+}
+
+/**
+ * RPX
+ */
+.xauth-popup-rpx {
+  width: 400px;
+  height: 240px;
+  margin: 0px auto;
+}
+
+.xauth-popup-rpx iframe {
+  width: 400px;
+  height: 240px;
+  position: absolute;
+  top: 0px;
+}
+
+.xauth-auth-rpx td.xauth-or {
+  padding-left: 10px;
+  background-position: left center;
+}
+
+.xauth-auth-rpx td.xauth-form {
+  padding-right: 38px;
+}
+
+.xauth-auth-rpx td.xauth-form input {
+  width: 200px;
+}
+
+/* Social sharing */
+.xauth-rpx-ss-icon {
+  width: 16px;
+  height: 16px;
+}
+
+a.xauth-ss-link:link,
+a.xauth-ss-link:visited,
+a.xauth-ss-link:hover,
+a.xauth-ss-link:active
+{
+  text-decoration: none;
+  outline-style: none;
+}
+
+.xauth-ss-button,
+.xauth-ss-button *,
+.xauth-rpx-ss-cart-item-button,
+.xauth-rpx-ss-cart-item-button *
+{
+  vertical-align: middle;
+}
+
+.xauth-rpx-ss-cart-item-button {
+  display: inline;
+}
+
+.xauth-rpx-ss-invoice-button {
+  float: left;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.xauth-rpx-ss-invoice-button * {
+  vertical-align: middle;
+}
+
+/**
+ * Internal
+ */
+.xauth-popup-internal {
+}
+
+.xauth-popup-internal ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.xauth-popup-internal ul li {
+  list-style: none;
+  background: transparent none;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+.xauth-popup-internal ul li * {
+  vertical-align: middle;
+}
+
+.xauth-popup-internal .openid input {
+  background: transparent url(images/openid-icon.gif) no-repeat left top;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+

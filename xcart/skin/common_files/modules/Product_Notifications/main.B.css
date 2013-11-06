@@ -1,0 +1,20 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * Product Notifications module CSS stylesheet (for 'back in stock' notifications)
+ *  
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    24e220c09b3eb31d9e15377dda7f5697dbf342d5, v2 (xcart_4_6_0), 2013-05-27 15:00:15, main.B.css, random
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+/* Notification request button */
+.prod-notif-request-button-B img 
+{
+  background: transparent url(../../images/prod_notif_icon_B.png) no-repeat left top;
+  width: 36px;
+  height: 28px;
+}

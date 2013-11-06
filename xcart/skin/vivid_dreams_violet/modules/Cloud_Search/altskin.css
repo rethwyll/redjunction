@@ -1,0 +1,31 @@
+/**
+ * CloudSearch module CSS stylesheet
+ *	
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author	   Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    057220456ee7f20c8b0b9cd483c43545a938b9f8, v2 (xcart_4_5_5), 2013-02-08 18:18:42, altskin.css, random
+ * @link	   http://www.x-cart.com/
+ * @see		   ____file_see____
+ */
+
+.instant-search-menu {
+	background: black;
+}
+
+.instant-search-menu dd .arrow {
+	background: black;
+}
+
+.instant-search-menu dd {
+	background: black;
+}
+
+.instant-search-menu dd .description {
+	color: white;
+}
+
+.instant-search-menu .highlight-hit {
+	background-color: #2e373f;
+}

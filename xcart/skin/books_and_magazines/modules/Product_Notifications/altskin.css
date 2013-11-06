@@ -1,0 +1,33 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * Product Notifications module CSS stylesheet
+ *  
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    23663ab722599bb67140d607ae2900b6d69f951d, v1 (xcart_4_5_3), 2012-09-13 13:13:01, altskin.css, random
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+#prod_notif_tooltip {
+  width: 200px;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid #bcbea2;
+  background: #fff;
+  padding: 5px;
+  opacity: 0.85;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#prod_notif_tooltip h3
+{
+  border: none;
+  color: #5b613f;
+  text-decoration: none;
+  font: bold 12px verdana;
+  text-align: left;
+}
+

@@ -1,0 +1,72 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+/**
+ * New arrivals module CSS stylesheet
+ *  
+ * @category   X-Cart
+ * @package    X-Cart
+ * @subpackage CSS
+ * @author     Ruslan R. Fazlyev <rrf@x-cart.com> 
+ * @version    2aca87f302048436ed08b4e6738089849840409f, v1 (xcart_4_5_3), 2012-08-07 09:50:06, main.css, tito
+ * @link       http://www.x-cart.com/
+ * @see        ____file_see____
+ */
+
+/**
+ * New arrivals products menu box
+ */
+.menu-new_arrivals img.icon {
+  background: url(../../images/dingbats_categorie.gif) no-repeat;
+}
+
+.menu-new_arrivals ul li a:link,
+.menu-new_arrivals ul li a:visited,
+.menu-new_arrivals ul li a:hover,
+.menu-new_arrivals ul li a:active
+{
+  font-weight: normal;
+}
+
+.menu-new_arrivals ul li,
+.menu-special ul li,
+.menu-help ul li,
+.menu-manufacturers ul li
+{
+  padding: 4px 0;
+}
+
+/**
+ * New arrival list
+ */
+ul.new_arrivals-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.new_arrivals-item li {
+  list-style: none;
+  padding: 2px;
+}
+
+ul.new_arrivals-item img {
+  width: 50px;
+  float: left;
+}
+
+.new_arrivals-item .details {
+  margin-left: 50px;
+  padding-left: 10px;
+}
+
+.new_arrivals-item a.product-title:link,
+.new_arrivals-item a.product-title:visited,
+.new_arrivals-item a.product-title:hover,
+.new_arrivals-item a.product-title:active
+{
+  font-weight: bold;
+}
+
+.menu-new_arrivals ul li a
+{
+  font-size: 12px;
+}

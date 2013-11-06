@@ -1,0 +1,178 @@
+.page {
+	position: relative; 
+	width: 98.8vw;
+	height: 1300px;
+	padding-top: 50px;
+	overflow: hidden; }
+	
+.page-body {
+	padding: 60px 0;
+}
+
+.page-body,
+#products-nav {
+	text-shadow: #666 0.01em 0.01em .09em;		
+}
+
+#welcome {
+	height: 1000px;
+	background-position: 0 75px;
+	background-image: url('../img/bg/bg_welcome.jpg'); }
+	
+	.welcome-body {
+		padding: 60px;
+		width: 480px;
+	}
+	#welcome h1 { 
+		top: 30px;
+		color: #c6ecfc; }
+	.welcome #main {
+		padding-top: 45px;
+		padding-bottom: 10px;
+		left: 0;  
+		background: #fff; }
+	.welcome .nav {
+		padding-right: 140px;
+		padding-left: 410px; }
+
+#about {
+	background-image: url('../img/bg/bg_about.jpg'); 
+	color: #fff; }
+	
+	#about h1 { color: #c6ecfc; }	
+	.about #main {
+		right: 0;  }
+	.about .nav {
+		padding-left: 0;
+		padding-right: 202px; }
+	#about .about-body {
+		width: 640px; 
+		margin-left: auto;
+		margin-right: auto; }
+
+#bulletin {
+	background-image: url('../img/bg/bg_bulletin.jpg'); 
+	color: #fff; }
+	
+	#bulletin h1 { color: #d61608; }	
+	.bulletin #main {
+		left: 0;  }
+	.bulletin .nav {
+		padding-left: 335px; }
+	#bulletin-nav,
+	#jobs {
+		width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		
+	
+#artists {
+	background-image: url('../img/bg/bg_artists.jpg'); 
+	color: #fff; }
+	
+	#artists h1 { color: #c6ecfc; }	
+	.artists #main {
+		right: 0;  }
+	.artists .nav {
+		padding-left: 0;
+		padding-right: 250px; }
+
+#products {
+	background-image: url('../img/bg/bg_products.jpg'); }
+
+	#products .bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: #000;
+		opacity: .5;
+	}
+	
+	#products h1 { color: #0a6856; }	
+	.products #main {
+		left: 0;  }
+	.products .nav {
+		padding-left: 355px; }
+
+/***** responsive *****/
+
+@media (max-width: 320px) and (orientation: portrait) { 
+	.page {
+		width: 100vw; 
+		background-size: auto 100vh; }
+		
+	.page-body {
+		padding: 20px 10px;
+	}
+
+	.about #main,
+	.artists #main {
+		right: auto;
+	}	
+	
+	#main {
+		left: 30px !important; }
+		
+	#welcome {
+		background-position: 0 0;
+		background-image: url('../img/bg/bg_welcome.jpg'); }
+
+		#welcome h1 { 
+			top: 10px; 
+			left: 10px; }
+		.welcome #main {
+			left: 0 !important;
+			padding-top: 30px; }
+		.welcome .nav {
+			padding-right: 0;
+			padding-left: 0;
+			position: relative;
+			top: 20px;
+			left: 10px; }
+
+	#about {
+		background-image: url('../img/bg/bg_about.jpg'); }
+
+		.about {
+			text-align: center; }
+		.about #main {
+			right: auto;
+		}
+		.about .nav {
+			padding-right: 0; }
+		#about .about-body {
+			width: auto; }
+
+	#bulletin {
+		background-image: url('../img/bg/bg_bulletin.jpg'); }
+
+		.bulletin .nav {
+			padding-left: 0; }
+		#bulletin-nav,
+		#jobs {
+			width: auto;
+		}
+
+
+	#artists {
+		background-image: url('../img/bg/bg_artists.jpg'); }
+
+		.artists .nav {
+			padding-right: 0; }
+
+	#products {
+		background-image: url('../img/bg/bg_products.jpg'); }
+	
+		.products #main {
+			left: 0;  }
+		.products .nav {
+			padding-left: 0; }		
+		
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) { 
+
+}
