@@ -15,6 +15,16 @@ window.rj.Base.init = function () {
 		
 		mainNav.add('.logo').on('click', 'a', function (e) {
 			if ($(this).data('slug') == header.attr('class')) {
+				if ($(this).data('slug') == 'products') {
+					$('.products-body .bxslider').hide();
+					$('.products-landing').fadeIn(500, function () {
+						$('#products .bg').fadeOut(500).remove();		
+						$('.products-body .skis, .products-body .snowboards').fadeOut(500);	
+						$('#products-nav-skis').hide('slide', 1000);						
+						$('#products-nav-snowboards').hide('slide', 1000);						
+
+					});					
+				}
 				return;
 			}
 			e.preventDefault();
@@ -22,6 +32,8 @@ window.rj.Base.init = function () {
 			var hash = that.attr('href');
 			var pageTop = $(hash).offset().top;
 			logo.fadeOut(500);
+			
+			
 			mainNav.animate({ top: '-=100px' }, 500, 'easeOutExpo', function () {
 				header.attr('class', that.data('slug'));
 			});
@@ -49,11 +61,13 @@ window.rj.Base.init = function () {
 		mainNav.scrollspy();
 	
 		$(window).on('scroll', function(){ 
-			mainNav.hide();					
-		    scrollTimer = window.setTimeout(function() {
-		    	mainNav.fadeIn(100);
-				window.clearTimeout(scrollTimer);		
-		    }, 1000);
+			if (header.attr('class') !== 'welcome') {
+				mainNav.hide();					
+			    scrollTimer = window.setTimeout(function() {
+			    	mainNav.fadeIn(100);
+					window.clearTimeout(scrollTimer);		
+			    }, 1000);				
+			}
 		}); 			
 
 		function productsSubnav(id) {

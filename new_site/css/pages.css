@@ -1,6 +1,7 @@
 .page {
+	background-position: 50% 0;
 	position: relative; 
-	width: 98.8vw;
+	width: 100%;
 	height: 1300px;
 	padding-top: 50px;
 	overflow: hidden; }
@@ -16,7 +17,7 @@
 
 #welcome {
 	height: 1000px;
-	background-position: 0 75px;
+	background-position: 50% 75px;
 	background-image: url('../img/bg/bg_welcome.jpg'); }
 	
 	.welcome-body {
@@ -86,7 +87,7 @@
 		top: 0;
 		left: 0;
 		width: 100vw;
-		height: 100vh;
+		height: 1300px;
 		background: #000;
 		opacity: .5;
 	}
