@@ -12,8 +12,7 @@ window.rj.Base.init = function () {
 	
 	function bindEvents() {
 		var scrollTimer = 0;
-		
-		mainNav.add('.logo').on('click', 'a', function (e) {
+		$('ul.nav a').add('.logo').on('click', function (e) {
 			if ($(this).data('slug') == header.attr('class')) {
 				if ($(this).data('slug') == 'products') {
 					$('.products-body .bxslider').hide();
@@ -38,7 +37,7 @@ window.rj.Base.init = function () {
 				header.attr('class', that.data('slug'));
 			});
 			
-			$('body').animate(
+			$('body, html').animate(
 				{ 
 					scrollTop: pageTop 
 				}, 
@@ -46,20 +45,25 @@ window.rj.Base.init = function () {
 					duration: 3000, 
 					easing: 'easeOutBack', 
 					complete: function () {	
-						console.log('complete:' + scrollTimer)										
 						window.location.hash = hash;
-						mainNav.show().animate({ top: '+=100px' }, 100, 'easeOutCirc');
+						mainNav.css({ top: '-100px'}); 
+						mainNav.show().animate({ top: '0' }, 100, 'easeOutCirc');
 						logo.fadeIn(500); 					
 					}
 				}
 			);	
 		});
-		
-		mainNav.on('activate.bs.scrollspy', function (e) {
-			header.attr('class', $(e.target).find(':first-child').data('slug'));			
-		});		
-		mainNav.scrollspy();
+
 	
+		mainNav.on('activate.bs.scrollspy', function (e) {
+			if ($(e.target).find(':first-child').data('slug')) {
+				header.attr('class', $(e.target).find(':first-child').data('slug'));			
+			}
+			else return false;
+			
+		});		
+		mainNav.scrollspy()
+
 		$(window).on('scroll', function(){ 
 			if (header.attr('class') !== 'welcome') {
 				mainNav.hide();					
@@ -79,7 +83,7 @@ window.rj.Base.init = function () {
 			$('.products-landing').fadeOut(500, function () {
 				$('.products-body').find('.' + id).fadeIn(500);	
 				$('#products').prepend('<div class="bg">').addClass('detail');				
-			});				
+			});		
 		}
 		
 		subnavSection.not('#news').not('#team').hide();
@@ -92,6 +96,7 @@ window.rj.Base.init = function () {
 			}
 			
 			else {
+				$('.bxslider.load').removeClass('load');									
 				var hash = $(this).attr('href');
 				page.find('.subnav-section').hide();
 				$(hash).fadeIn(500);				

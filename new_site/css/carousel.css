@@ -16,25 +16,29 @@
 	border: 0;
 	box-shadow: none;
 	height: auto !important;
+	left: 0;
 }
 
 .bxslider {
-	margin-left: -25vw;
-	width: 615% !important; }
+	margin-left: -25vw; }
 
 	.products-body .bxslider {
 		margin-left: -80vw;
 	}
-
-	.products-body .bxslider.snowboards {
-		margin-left: -80vw;
+	
+	.products-body .bxslider.load {
+		-webkit-transform: translate3d(-40px, 0, 0) !important;		
 	}
 
 .bxslider > li {
 	width: 45vw !important;
 	margin-left: 5vw !important; }
+	
 	.products-body .bxslider > li {
 		width: 80vw !important;
+	}
+	..products-body .bxslider > li:first-child {
+		margin-left: 0 !important;
 	}
 
 
