@@ -12,7 +12,7 @@ window.rj.Base.init = function () {
 	
 	function bindEvents() {
 		var scrollTimer = 0;
-		$('ul.nav a').add('.logo').on('click', function (e) {
+		mainNav.add('.logo').on('click', 'a', function (e) {
 			if ($(this).data('slug') == header.attr('class')) {
 				if ($(this).data('slug') == 'products') {
 					$('.products-body .bxslider').hide();
