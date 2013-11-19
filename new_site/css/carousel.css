@@ -23,23 +23,25 @@
 	margin-left: -25vw; }
 
 	.products-body .bxslider {
-		margin-left: -80vw;
+		padding: 0;
+		left: 50%;
+		top: 0;				
 	}
-	
-	.products-body .bxslider.load {
-		-webkit-transform: translate3d(-40px, 0, 0) !important;		
+
+	.products-body .bxslider {
+		margin-left: -1620px;				
 	}
+
 
 .bxslider > li {
 	width: 45vw !important;
 	margin-left: 5vw !important; }
 	
 	.products-body .bxslider > li {
-		width: 80vw !important;
-	}
-	..products-body .bxslider > li:first-child {
+		width: 1080px !important;
 		margin-left: 0 !important;
 	}
+
 
 
 .artists-body .contentslider {

@@ -2,7 +2,7 @@
 	background-position: 50% 0;
 	position: relative; 
 	width: 100%;
-	height: 1300px;
+	height: 1034px;
 	padding-top: 50px;
 	overflow: hidden; }
 	
@@ -10,14 +10,13 @@
 	padding: 60px 0;
 }
 
-.page-body,
-#products-nav {
-	text-shadow: #666 0.01em 0.01em .09em;		
+.page-body, #products-nav {
+	text-shadow: #000 0.001em 0.001em .001em;		
 }
 
 #welcome {
-	height: 1000px;
-	background-position: 50% 75px;
+
+	background-position: 50% 0px;
 	background-image: url('../img/bg/bg_welcome.jpg'); }
 	
 	.welcome-body {
@@ -28,10 +27,10 @@
 		top: 30px;
 		color: #c6ecfc; }
 	.welcome #main {
-		padding-top: 45px;
 		padding-bottom: 10px;
 		left: 0;  }
 	.welcome .nav {
+		padding-top: 10px;
 		padding-right: 140px;
 		padding-left: 410px; }
 
@@ -64,6 +63,19 @@
 		width: 640px;
 		margin-left: auto;
 		margin-right: auto;
+		
+	}
+		
+	#recs {
+		width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#news {
+		width: 640px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 		
 	
@@ -87,7 +99,7 @@
 		left: 0;
 		width: 100vw;
 		height: 1300px;
-		background: #000;
+		/** background: #000; **/
 		opacity: .5;
 	}
 	

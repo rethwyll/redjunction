@@ -1,6 +1,5 @@
 #products-nav {
 	position: relative;
-	z-index: 10;
 	width: 640px;
 	margin-left: auto;
 	margin-right: auto;
@@ -9,7 +8,7 @@
 	
 .product {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .product h2 {
 	margin: 0;
@@ -17,11 +16,12 @@
 
 .products-landing,
 .product header {
-	max-width: 650px;
+	max-width: 640px;
+	min-height: 160px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	color: #c6ecfc; }
+	color: #ffffff; }
 
 .products-landing-image-container {
 	position: absolute;
@@ -44,29 +44,35 @@
 	}
 
 	.products-landing-image.ski {
-		left: 80vw;	
+		left: 75vw;	
 		top: 0;
 	}
 	.products-landing-image.snowboard {
-		left: 75vw;	
-		top: 30vw;
+		left: 70vw;	
+		top: 15vw;
 	}
 
 	.products-landing-image object {
 		height: 25vw; }
-		
+
+.subnav-link {
+	margin-top: -2px;
+}
 
 .product header,
-.product button {
+.product button,
+.product .preview-swatches {
 	visibility: hidden;
 }
 	.current .product header,
-	.current .product button {
+	.current .product button,
+	.current .product .preview-swatches {
 		visibility: visible; }
 
 .preview {
 	position: relative;
-	height: 20vw; 
+	height: 210px;
+	padding: 0; 
 }
 
 .preview li {
@@ -83,6 +89,7 @@
 	text-align: center;
 }
 	.products-swatches ul {
+		margin-top:10px;
 		list-style: none; }
 
 	.products-swatches-pager a {

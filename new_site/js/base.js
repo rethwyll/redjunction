@@ -96,7 +96,6 @@ window.rj.Base.init = function () {
 			}
 			
 			else {
-				$('.bxslider.load').removeClass('load');									
 				var hash = $(this).attr('href');
 				page.find('.subnav-section').hide();
 				$(hash).fadeIn(500);				

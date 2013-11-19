@@ -58,10 +58,7 @@ $(document).ready(function(){
 	    moveSlides: 1,
 		hideControlOnEnd: true,
 		onSlideAfter: slideHandler
-	  });
-	
-	$('.bxslider.snowboards').css('-webkit-transform', 'translate3d(-40px,0,0)');
-		
+	  });		
 		
 	$('.bx-wrapper').on('swipeleft', function () {
 		$(this).find('.bx-next').trigger('click');
