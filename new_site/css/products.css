@@ -103,18 +103,73 @@
 			height: 100%;
 		}
 
-.configure {
-	display: none;
-	background: transparent;
-	text-transform: uppercase;
-	border: 1px solid #13b6ea;
-	height: 40px;
-	width: 140px;
-	color: #13b6ea;
+button.configure { display: none; }
+
+#maharajah-configure {
+	width: 220px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 100px;
 }
+	#maharajah-configure .hide-group {
+		display: none;
+	}
+
+	#maharajah-configure .configure-column {
+		color: #fff;
+		float: left;
+	}
+
+	#maharajah-configure button {
+		border-radius: 4px;
+		height: 30px;
+		width: 140px;
+		color: #fff;	
+		margin-bottom: 10px;	
+	}
+
+	#maharajah-configure .primary {
+		background: #13b6ea;		
+		border: 1px solid #13b6ea;		
+	}
+
+	#maharajah-configure .secondary {
+		background: #666;	
+		border: 1px solid #666;	
+	}	
+	
+	#maharajah-configure .configure-options {
+		margin-left: 10px;
+		width: 140px;
+	}
+
+		#maharajah-configure .configure-options menu,
+		#maharajah-configure .configure-options ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;			
+		}
+	
+		#maharajah-configure .configure-options > ul {
+			width: 140px;
+		}
+
+		#maharajah-configure .configure-options menu,
+		#maharajah-configure .configure-options menu ul {
+			display: inline-block;
+			float: right;
+		}
+		
+	#maharajah-configure .configure-options .configure-option {
+		overflow: auto;
+		margin-bottom: 10px;
+		background: #666;
+		opacity: .5;		
+	}
+	
+	#maharajah-configure .configure-options menu {
+
+	}
 
 .ui-btn-inner {
 	display: none;

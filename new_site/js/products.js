@@ -8,4 +8,12 @@ $(document).ready(function(){
 		previewLi.eq(index).addClass('current', 500).fadeIn(500);		
 	})
 
+	$('.configure-options .configure-button').on('click', function (e) {
+		$(this).parent().find('.hide-group').show();
+	});
+
+	$('.configure-options .close').on('click', function (e) {
+		e.preventDefault();
+		$(this).parent().find('.hide-group').hide();
+	});
 });
