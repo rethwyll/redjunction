@@ -1,5 +1,5 @@
-window.rj = window.rj || {}
-window.rj.Base = {} 
+window.rj = window.rj || {};
+window.rj.Base = {};
 
 window.rj.Base.init = function () {
 	jQuery.extend( jQuery.easing,

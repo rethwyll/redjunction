@@ -45,7 +45,7 @@
 					<li class="nav-bulletin"><a href="#bulletin" data-slug="bulletin">Bulletin</a></li>
 					<li class="nav-artists"><a href="#artists" data-slug="artists">Artists</a></li>
 					<li class="nav-products"><a href="#products" data-slug="products">Products</a></li>
-					<!--<li><a href="xcart/index.php">Cart</a></li>-->
+					<li><a href="xcart/index.php">Cart<span class="total"></span></a></li>
 				</ul>
 			</nav>
 			<div id="social">
@@ -312,14 +312,14 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</ul>
 
 										<div id="products-swatches-pager-maharajah" class="preview-swatches products-swatches-pager">
-										  <a href="#"><img src="img/products/maharajah/swatch1.jpg" /></a>
-										  <a href="#"><img src="img/products/maharajah/swatch2.jpg" /></a>
-										  <a href="#"><img src="img/products/maharajah/swatch3.jpg" /></a>
-										  <a href="#"><img src="img/products/maharajah/swatch4.jpg" /></a>
-										  <a href="#"><img src="img/products/maharajah/swatch5.jpg" /></a>
+										  <a href="#" data-value='Rise'><img src="img/products/maharajah/swatch1.jpg" /></a>
+										  <a href="#" data-value='Superstar'><img src="img/products/maharajah/swatch2.jpg" /></a>
+										  <a href="#" data-value='Monster'><img src="img/products/maharajah/swatch3.jpg" /></a>
+										  <a href="#" data-value='Twilight'><img src="img/products/maharajah/swatch4.jpg" /></a>
+										  <a href="#" data-value='Heaven'><img src="img/products/maharajah/swatch5.jpg" /></a>
 										</div>
                                         
-                                    <div id="products-swatches-pager-maharajah" class="preview-swatches products-swatches-pager">
+                                    	<div class="preview-swatches">
 										  <a href="#"><p class="products-artist">Maddy<br>Porter</p></a>
 										  <a href="#"><p class="products-artist">David<br>Day</p></a>
 										  <a href="#"><p class="products-artist"><p class="products-artist">David<br>Day</p></a>
@@ -328,52 +328,52 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</div>
 									</section>
 								
-									<div id="maharajah-configure" class="configure">
+									<div id="maharajah-configure" class="product-configure" data-productid="17678" data-productcode="MAH">
 										<div class="meta configure-column">
-											<div class="swatch"><img src=""></div>
-											<div class="price">$924.00</div>
+											<div class="swatches hide-group configure-input" data-classid="511">
+												<img class="pointer" src="img/products/dropdown_arrow.png">
+												<a href="#" data-value="0" class="current"></a>
+											</div>
+											<div class="price price1">$924.00</div>
 										</div>
 										<div class="configure-options configure-column">
 											<a href="#" class="close hide-group" alt="Close">X</a>
 											<button class="primary configure-button" id="configure-maharajah">Configure</button>
 											<ul class="configure-options-list hide-group">
 												<li class="core configure-option">
-													<span>Select Core:</span>
+													<label for="core-value">Select Core:</label>
+													<input type="text" class="configure-input core-value" data-classid="510">
 													<menu class="core-options">
 														<ul>
-															<li>Option 1</li>
-															<li>Option 2</li>
-															<li>Option 3</li>
-															<li>Option 4</li>
+															<li data-value="Birch Ultra-Stringer">Birch Ultra-Stringer</li>
 														</ul>
 													</menu>
 												</li>
 												<li class="length configure-option">
-													<span>Select Length:</span>
+													<label for="length-value">Select Length:</label>
+													<input type="text" class="configure-input length-value" data-classid="509">													
 													<menu class="length-options">
 														<ul>
-															<li>Option 1</li>
-															<li>Option 2</li>
-															<li>Option 3</li>
-															<li>Option 4</li>
+															<li data-value="188cm">188cm</li>
 														</ul>
 													</menu>												
 												</li>
 												<li class="quantity configure-option">
-													<span>Select Quantity:</span>
+													<label for="quantity-value">Select Quantity:</label>
+													<input type="text" class="configure-input quantity-value">																										
 													<menu class="quantity-options">
 														<ul>
-															<li>1</li>
-															<li>2</li>
-															<li>3</li>
-															<li>4</li>
-															<li>5</li>
+															<li data-value="1">1</li>
+															<li data-value="2">2</li>
+															<li data-value="3">3</li>
+															<li data-value="4">4</li>
+															<li data-value="5">5</li>
 														</ul>
 													</menu>
 												</li>
 											</ul>
-											<button class="primary hide-group">Buy</button>
-											<button class="secondary hide-group">Add to Cart</button>											
+											<button class="buy primary hide-group">Buy</button>
+											<button class="add-to-cart secondary hide-group">Add to Cart</button>											
 										</div>
 									</div>
 									
@@ -384,7 +384,7 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 									<header class="product-desc">
 										<h2>Honcho</h2>					
 										<p>The Honcho is our flagship ski. It&rsquo;s designed to be a versatile ski, at home 
-										in the resort or in the BC. It will excel in trees or while making high speed turns in open bowls.</p><p>Lengths: 182cm - 20m Radius, 176cm - 17m Radius<br>Dimensions: 150mm, 125mm, 136mm<br>Cores: Resort Style or Backcoutry Carbon Reinforced<br>Profile: Early Rise Tip, Low Rise Tail</p><p>$835.00 Resort Core<br>$924.00 Backcountry Carbon Core</p>
+										in the resort or in the BC. It will excel in trees or while making high speed turns in open bowls.</p><p>Lengths: 182cm - 20m Radius, 176cm - 17m Radius<br>Dimensions: 150mm, 125mm, 136mm<br>Cores: Resort Style or Backcountry Carbon Reinforced<br>Profile: Early Rise Tip, Low Rise Tail</p><p>$835.00 Resort Core<br>$924.00 Backcountry Carbon Core</p>
 									</header>
 					
 									<section class="products-swatches">
@@ -398,14 +398,14 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</ul>
 
 										<div id="products-swatches-pager-honcho" class="preview-swatches products-swatches-pager">
-										  <a href="#"><img src="img/products/honcho/swatch1.jpg" /></a>
-										  <a href="#"><img src="img/products/honcho/swatch2.jpg" /></a>
-										  <a href="#"><img src="img/products/honcho/swatch3.jpg" /></a>
-                                      <a href="#"><img src="img/products/honcho/swatch4.jpg" /></a>
-										  <a href="#"><img src="img/products/honcho/swatch5.jpg" /></a>
+										  <a href="#" data-value='Rise'><img src="img/products/honcho/swatch1.jpg" /></a>
+										  <a href="#" data-value='Superstar'><img src="img/products/honcho/swatch2.jpg" /></a>
+										  <a href="#" data-value='Monster'><img src="img/products/honcho/swatch3.jpg" /></a>
+                                      	  <a href="#" data-value='Twilight'><img src="img/products/honcho/swatch4.jpg" /></a>
+										  <a href="#" data-value='Heaven'><img src="img/products/honcho/swatch5.jpg" /></a>
 										</div>
                                         
-                                    <div id="products-swatches-pager-maharajah" class="preview-swatches products-swatches-pager">
+                                    <div class="preview-swatches">
 										  <a href="#"><p class="products-artist">Maddy<br>Porter</p></a>
 										  <a href="#"><p class="products-artist">David<br>Day</p></a>
 										  <a href="#"><p class="products-artist"><p class="products-artist">David<br>Day</p></a>
@@ -414,7 +414,57 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</div>
 									</section>
 					
-									<button class="configure" id="configure-honcho">Configure</button>					
+									<div id="honcho-configure" class="product-configure" data-productid="17679" data-productcode="HON">
+										<div class="meta configure-column">
+											<div class="swatches hide-group configure-input" data-classid="514">
+												<img class="pointer" src="img/products/dropdown_arrow.png">
+												<a href="#" data-value="0" class="current"></a>
+											</div>
+											<div class="price price1">$835.00</div>
+											<div class="price price2">$924.00</div>
+										</div>
+										<div class="configure-options configure-column">
+											<a href="#" class="close hide-group" alt="Close">X</a>
+											<button class="primary configure-button" id="configure-honcho">Configure</button>
+											<ul class="configure-options-list hide-group">
+												<li class="core configure-option">
+													<label for="core-value">Select Core:</label>
+													<input type="text" class="configure-input core-value" data-classid="513">
+													<menu class="core-options">
+														<ul>
+															<li data-value="Resort Style">Resort Style</li>
+															<li data-value="Backcountry Carbon Reinforced">Backcountry Carbon Reinforced</li>
+														</ul>
+													</menu>
+												</li>
+												<li class="length configure-option">
+													<label for="length-value">Select Length:</label>
+													<input type="text" class="configure-input length-value" data-classid="512">													
+													<menu class="length-options">
+														<ul>
+															<li data-value="176cm">176cm</li>
+															<li data-value="182cm">182cm</li>
+														</ul>
+													</menu>												
+												</li>
+												<li class="quantity configure-option">
+													<label for="quantity-value">Select Quantity:</label>
+													<input type="text" class="configure-input quantity-value">																										
+													<menu class="quantity-options">
+														<ul>
+															<li data-value="1">1</li>
+															<li data-value="2">2</li>
+															<li data-value="3">3</li>
+															<li data-value="4">4</li>
+															<li data-value="5">5</li>
+														</ul>
+													</menu>
+												</li>
+											</ul>
+											<button class="buy primary hide-group">Buy</button>
+											<button class="add-to-cart secondary hide-group">Add to Cart</button>											
+										</div>
+									</div>					
 								</section>
 							</li>
 							<li>
@@ -424,7 +474,7 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										<h2>Tycoon</h2>					
 										<p>A balance between touring and skiing is what this ski is all about. The 
 										Tycoon is our smallest ski at 112mm underfoot.  
-										This is a hut trip or a daily rider ski.</p><p>Lengths: 180cm - 16m Radius, 174cm - 15m Radius, 162cm - 12m Radius<br>Dimensions: 134.5mm, 112mm, 125mm<br>Cores: Resort Style or Backcoutry Carbon Reinforced <br>Profile: Early Rise Tip, Traditional Tail</p><p>$750.00 Resort Core<br>$835.00 Backcountry Carbon Core</p>
+										This is a hut trip or a daily rider ski.</p><p>Lengths: 180cm - 16m Radius, 174cm - 15m Radius, 162cm - 12m Radius<br>Dimensions: 134.5mm, 112mm, 125mm<br>Cores: Resort Style or Backcountry Carbon Reinforced <br>Profile: Early Rise Tip, Traditional Tail</p><p>$750.00 Resort Core<br>$835.00 Backcountry Carbon Core</p>
 									</header>	
 						
 									<section class="products-swatches">					
@@ -438,14 +488,14 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</ul>
 
 										<div id="products-swatches-pager-tycoon" class="preview-swatches products-swatches-pager">
-										  <a href="#"><img src="img/products/tycoon/swatch1.jpg" /></a>
-										  <a href="#"><img src="img/products/tycoon/swatch2.jpg" /></a>
-										  <a href="#"><img src="img/products/tycoon/swatch3.jpg" /></a>
-                                      <a href="#"><img src="img/products/tycoon/swatch4.jpg" /></a>
-										  <a href="#"><img src="img/products/tycoon/swatch5.jpg" /></a>
+										  <a href="#" data-value='Rise'><img src="img/products/tycoon/swatch1.jpg" /></a>
+										  <a href="#" data-value='Superstar'><img src="img/products/tycoon/swatch2.jpg" /></a>
+										  <a href="#" data-value='Monster'><img src="img/products/tycoon/swatch3.jpg" /></a>
+                                      	  <a href="#" data-value='Twilight'><img src="img/products/tycoon/swatch4.jpg" /></a>
+										  <a href="#" data-value='Heaven'><img src="img/products/tycoon/swatch5.jpg" /></a>
 										</div>
                                         
-                                    <div id="products-swatches-pager-maharajah" class="preview-swatches products-swatches-pager">
+                                    <div class="preview-swatches">
 										  <a href="#"><p class="products-artist">Maddy<br>Porter</p></a>
 										  <a href="#"><p class="products-artist">David<br>Day</p></a>
 										  <a href="#"><p class="products-artist"><p class="products-artist">David<br>Day</p></a>
@@ -455,7 +505,58 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
                                         
 									</section>
 					
-									<button class="configure" id="configure-tycoon">Configure</button>					
+									<div id="tycoon-configure" class="product-configure" data-productid="17680" data-productcode="TYC">
+										<div class="meta configure-column">
+											<div class="swatches hide-group configure-input" data-classid="518">
+												<img class="pointer" src="img/products/dropdown_arrow.png">
+												<a href="#" data-value="0" class="current"></a>
+											</div>
+											<div class="price price1">$750.00</div>
+											<div class="price price2">$835.00</div>											
+										</div>
+										<div class="configure-options configure-column">
+											<a href="#" class="close hide-group" alt="Close">X</a>
+											<button class="primary configure-button" id="configure-maharajah">Configure</button>
+											<ul class="configure-options-list hide-group">
+												<li class="core configure-option">
+													<label for="core-value">Select Core:</label>
+													<input type="text" class="configure-input core-value" data-classid="517">
+													<menu class="core-options">
+														<ul>
+															<li data-value="Resort Style">Resort Style</li>
+															<li data-value="Backcountry Carbon Reinforced">Backcountry Carbon Reinforced</li>
+														</ul>
+													</menu>
+												</li>
+												<li class="length configure-option">
+													<label for="length-value">Select Length:</label>
+													<input type="text" class="configure-input length-value" data-classid="515">													
+													<menu class="length-options">
+														<ul>
+															<li data-value="162cm">162cm</li>
+															<li data-value="174cm">174cm</li>
+															<li data-value="180cm">180cm</li>
+														</ul>
+													</menu>												
+												</li>
+												<li class="quantity configure-option">
+													<label for="quantity-value">Select Quantity:</label>
+													<input type="text" class="configure-input quantity-value">																										
+													<menu class="quantity-options">
+														<ul>
+															<li data-value="1">1</li>
+															<li data-value="2">2</li>
+															<li data-value="3">3</li>
+															<li data-value="4">4</li>
+															<li data-value="5">5</li>
+														</ul>
+													</menu>
+												</li>
+											</ul>
+											<button class="buy primary hide-group">Buy</button>
+											<button class="add-to-cart secondary hide-group">Add to Cart</button>											
+										</div>
+									</div>					
 								</section>
 							</li>
 						</ul>
@@ -483,14 +584,14 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</ul>
 
 										<div id="products-swatches-pager-majestic" class="preview-swatches products-swatches-pager">
-										  <a href="#"><img src="img/products/majestic/swatch1.jpg" /></a>
-										  <a href="#"><img src="img/products/majestic/swatch2.jpg" /></a>
-										  <a href="#"><img src="img/products/majestic/swatch3.jpg" /></a>
-                                      <a href="#"><img src="img/products/majestic/swatch4.jpg" /></a>
-										  <a href="#"><img src="img/products/majestic/swatch5.jpg" /></a>
+										  <a href="#" data-value='Rise'><img src="img/products/majestic/swatch1.jpg" /></a>
+										  <a href="#" data-value='Superstar'><img src="img/products/majestic/swatch2.jpg" /></a>
+										  <a href="#" data-value='Monster'><img src="img/products/majestic/swatch3.jpg" /></a>
+                                      	  <a href="#" data-value='Twilight'><img src="img/products/majestic/swatch4.jpg" /></a>
+										  <a href="#" data-value='Heaven'><img src="img/products/majestic/swatch5.jpg" /></a>
 										</div>
                                         
-                                    <div id="products-swatches-pager-maharajah" class="preview-swatches products-swatches-pager">
+                                    <div class="preview-swatches">
 										  <a href="#"><p class="products-artist">Maddy<br>Porter</p></a>
 										  <a href="#"><p class="products-artist">David<br>Day</p></a>
 										  <a href="#"><p class="products-artist"><p class="products-artist">David<br>Day</p></a>
@@ -499,7 +600,54 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</div>
 									</section>
 					
-									<button class="configure" id="configure-majestic">Configure</button>					
+									<div id="majestic-configure" class="product-configure" data-productid="17681" data-productcode="MAJ">
+										<div class="meta configure-column">
+											<div class="swatches hide-group configure-input" data-classid="521">
+												<img class="pointer" src="img/products/dropdown_arrow.png">
+												<a href="#" data-value="0" class="current"></a>
+											</div>
+											<div class="price price1">$725.00</div>
+										</div>
+										<div class="configure-options configure-column">
+											<a href="#" class="close hide-group" alt="Close">X</a>
+											<button class="primary configure-button" id="configure-maharajah">Configure</button>
+											<ul class="configure-options-list hide-group">
+												<li class="core configure-option">
+													<label for="core-value">Select Core:</label>
+													<input type="text" class="configure-input core-value" data-classid="520">
+													<menu class="core-options">
+														<ul>
+															<li data-value="Resort Style">Resort Style</li>
+														</ul>
+													</menu>
+												</li>
+												<li class="length configure-option">
+													<label for="length-value">Select Length:</label>
+													<input type="text" class="configure-input length-value" data-classid="519">													
+													<menu class="length-options">
+														<ul>
+															<li data-value="160cm">160cm</li>
+														</ul>
+													</menu>												
+												</li>
+												<li class="quantity configure-option">
+													<label for="quantity-value">Select Quantity:</label>
+													<input type="text" class="configure-input quantity-value">																										
+													<menu class="quantity-options">
+														<ul>
+															<li data-value="1">1</li>
+															<li data-value="2">2</li>
+															<li data-value="3">3</li>
+															<li data-value="4">4</li>
+															<li data-value="5">5</li>
+														</ul>
+													</menu>
+												</li>
+											</ul>
+											<button class="buy primary hide-group">Buy</button>
+											<button class="add-to-cart secondary hide-group">Add to Cart</button>											
+										</div>
+									</div>								
 								</section>					
 							</li>
 							<li>
@@ -521,14 +669,14 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</ul>
 
 										<div id="products-swatches-pager-rhythm" class="preview-swatches products-swatches-pager">
-										  <a href="#"><img src="img/products/rhythm/swatch1.jpg" /></a>
-										  <a href="#"><img src="img/products/rhythm/swatch2.jpg" /></a>
-										  <a href="#"><img src="img/products/rhythm/swatch3.jpg" /></a>
-                                      <a href="#"><img src="img/products/rhythm/swatch4.jpg" /></a>
-										  <a href="#"><img src="img/products/rhythm/swatch5.jpg" /></a>
+										  <a href="#" data-value='Rise'><img src="img/products/rhythm/swatch1.jpg" /></a>
+										  <a href="#" data-value='Superstar'><img src="img/products/rhythm/swatch2.jpg" /></a>
+										  <a href="#" data-value='Monster'><img src="img/products/rhythm/swatch3.jpg" /></a>
+                                      	  <a href="#" data-value='Twilight'><img src="img/products/rhythm/swatch4.jpg" /></a>
+										  <a href="#" data-value='Heaven'><img src="img/products/rhythm/swatch5.jpg" /></a>
 										</div>
                                         
-                                    <div id="products-swatches-pager-maharajah" class="preview-swatches products-swatches-pager">
+                                    <div class="preview-swatches">
 										  <a href="#"><p class="products-artist">Maddy<br>Porter</p></a>
 										  <a href="#"><p class="products-artist">David<br>Day</p></a>
 										  <a href="#"><p class="products-artist"><p class="products-artist">David<br>Day</p></a>
@@ -537,7 +685,56 @@ A designer, photographer, and traveler, you can check out her work at <a href="h
 										</div>
 									</section>
 					
-									<button class="configure" id="configure-rhythm">Configure</button>					
+									<div id="rhythm-configure" class="product-configure" data-productid="17682" data-productcode="RHY">
+										<div class="meta configure-column">
+											<div class="swatches hide-group configure-input" data-classid="524">
+												<img class="pointer" src="img/products/dropdown_arrow.png">
+												<a href="#" data-value="0" class="current"></a>
+											</div>
+											<div class="price price1">$750.00</div>
+											<div class="price price2">$835.00</div>
+										</div>
+										<div class="configure-options configure-column">
+											<a href="#" class="close hide-group" alt="Close">X</a>
+											<button class="primary configure-button" id="configure-maharajah">Configure</button>
+											<ul class="configure-options-list hide-group">
+												<li class="core configure-option">
+													<label for="core-value">Select Core:</label>
+													<input type="text" class="configure-input core-value" data-classid="523">
+													<menu class="core-options">
+														<ul>
+															<li data-value="Resort Style">Resort Style</li>
+															<li data-value="Backcountry Carbon Reinforced">Backcountry Carbon Reinforced</li>
+														</ul>
+													</menu>
+												</li>
+												<li class="length configure-option">
+													<label for="length-value">Select Length:</label>
+													<input type="text" class="configure-input length-value" data-classid="522">													
+													<menu class="length-options">
+														<ul>
+															<li data-value="162cm">162cm</li>
+														</ul>
+													</menu>												
+												</li>
+												<li class="quantity configure-option">
+													<label for="quantity-value">Select Quantity:</label>
+													<input type="text" class="configure-input quantity-value">																										
+													<menu class="quantity-options">
+														<ul>
+															<li data-value="1">1</li>
+															<li data-value="2">2</li>
+															<li data-value="3">3</li>
+															<li data-value="4">4</li>
+															<li data-value="5">5</li>
+														</ul>
+													</menu>
+												</li>
+											</ul>
+											<button class="buy primary hide-group">Buy</button>
+											<button class="add-to-cart secondary hide-group">Add to Cart</button>											
+										</div>
+									</div>								
 								</section>	
 							</li>
 						</ul>

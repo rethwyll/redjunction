@@ -136,7 +136,7 @@ if ($mode == 'clear_cart') {
         foreach($cart['products'] as $p) {
 
             $changes[$p['cartid']] = array(
-                'productid' => $p['productid'],
+                 'productid' => $p['productid'],
                 'quantity'  => $p['amount'],
                 'change'    => $p['amount'] * (-1),
             );
@@ -607,7 +607,7 @@ if (!$func_is_cart_empty) {
 func_save_customer_cart();
 
 if (
-    !$func_is_cart_empty
+     !$func_is_cart_empty
     && $mode == 'checkout'
 ) {
     require $xcart_dir . '/include/checkout.php';

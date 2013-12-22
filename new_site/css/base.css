@@ -7,9 +7,11 @@ a { color: #13b6ea;
 text-decoration:none;
 }
 
-a:hover { color: #13b6ea;
+button a, button a:hover {
+	color: #fff;
+	text-decoration: none; }
 
-}
+a:hover { color: #13b6ea; }
 
 
 .hide {

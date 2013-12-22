@@ -47,6 +47,17 @@ define('STORE_NAVIGATION_SCRIPT', 'Y');
 
 require './auth.php';
 
+if (isset($format) && $format == 'json') {
+	print json_encode(func_query("
+		SELECT  `optionid` ,  `xcart_products`.`productid` , `xcart_products`.`productcode`, `option_name` 
+		FROM  `xcart_class_options` 
+		JOIN  `xcart_classes` 
+		JOIN  `xcart_products` 
+		WHERE  `xcart_class_options`.`classid` =  `xcart_classes`.`classid` 
+		AND  `xcart_classes`.`productid` =  `xcart_products`.`productid`		
+	"));	
+}
+
 if (
     isset($productid)
     && !empty($productid)

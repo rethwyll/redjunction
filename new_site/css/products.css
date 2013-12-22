@@ -23,6 +23,9 @@
 	padding: 0;
 	color: #ffffff; }
 
+.product header p {
+	width: 70%; }
+
 .products-landing-image-container {
 	position: absolute;
 	top: 100px;
@@ -86,7 +89,7 @@
 		margin-top:10px;
 		list-style: none; }
 
-	.products-swatches-pager a {
+	.preview-swatches a {
 		width: 5vw;
 		height: 5vw;
 		display: inline-block;
@@ -94,33 +97,59 @@
 		text-align: center;
 	}
 
-		.products-swatches-pager a:first-child {
+		.preview-swatches a:first-child {
 			margin-left: 0;
 		}
 
-		.products-swatches-pager img {
+		.preview-swatches img {
 			width: 100%;
 			height: 100%;
 		}
 
 button.configure { display: none; }
 
-#maharajah-configure {
+.product-configure {
 	width: 220px;
 	position: absolute;
 	top: 0;
 	right: 100px;
 }
-	#maharajah-configure .hide-group {
+	.product-configure .hide-group {
 		display: none;
 	}
 
-	#maharajah-configure .configure-column {
+	.product-configure .configure-column {
 		color: #fff;
 		float: left;
 	}
 
-	#maharajah-configure button {
+	.product-configure .swatches {
+		min-height: 45px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	.product-configure .swatches .pointer {
+		position: absolute;
+		top: 32px;
+		right: 0;
+	}	
+
+	.product-configure .swatches a {
+		width: 45px;
+		height: 45px;
+		border: 1px solid #000;		
+		display: none;
+	}
+	
+	.product-configure .swatches a.current {
+		display: block;
+	}
+	
+	.product-configure .price2 {
+		display: none; }
+
+	.product-configure button {
 		border-radius: 4px;
 		height: 30px;
 		width: 140px;
@@ -128,47 +157,82 @@ button.configure { display: none; }
 		margin-bottom: 10px;	
 	}
 
-	#maharajah-configure .primary {
+	.product-configure .primary {
 		background: #13b6ea;		
 		border: 1px solid #13b6ea;		
 	}
 
-	#maharajah-configure .secondary {
+	.product-configure .secondary {
 		background: #666;	
 		border: 1px solid #666;	
 	}	
 	
-	#maharajah-configure .configure-options {
+	.product-configure .configure-options {
 		margin-left: 10px;
 		width: 140px;
 	}
 
-		#maharajah-configure .configure-options menu,
-		#maharajah-configure .configure-options ul {
+		.product-configure .configure-options menu,
+		.product-configure .configure-options ul {
 			list-style: none;
 			padding: 0;
 			margin: 0;			
 		}
 	
-		#maharajah-configure .configure-options > ul {
+		.product-configure .configure-options > ul {
 			width: 140px;
 		}
 
-		#maharajah-configure .configure-options menu,
-		#maharajah-configure .configure-options menu ul {
+		.product-configure .configure-options menu {
 			display: inline-block;
 			float: right;
 		}
 		
-	#maharajah-configure .configure-options .configure-option {
-		overflow: auto;
+	.product-configure .configure-options .configure-option {
 		margin-bottom: 10px;
-		background: #666;
-		opacity: .5;		
+		position: relative;
+		background: rgba(0,0,0,.5);			
+	}
+
+	.product-configure .configure-options .close {
+		font-size: 14px;
+		margin-bottom: 10px;
 	}
 	
-	#maharajah-configure .configure-options menu {
+	.product-configure .configure-option label {
+		position: absolute;
+		top: 0;
+		left: 5px;
+	}
+	
+	.product-configure .configure-option input {
+		background: transparent url(../img/products/dropdown_arrow.png) 100% 100% no-repeat;
+		width: 60px;
+		border: 0;
+		height: 20px;	
+		margin-left: 80px;
+		padding: 0;
+		color: #fff;
+	}
+		.product-configure .configure-option .length-value,
+		.product-configure .configure-option .quantity-value {
+			width: 40px;
+			margin-left: 100px; }
 
+	.product-configure .configure-option input:focus {
+		background: rgba(255,255,255,.3) url(../img/products/dropdown_arrow.png) 100% 100% no-repeat;		
+	}	
+	
+	.product-configure .configure-option menu {
+		display: none;
+		position: absolute;
+		top: 20px;
+		right: 0;
+		background: #fff;
+		color: #000;
+		width: 70px;
+		cursor: pointer;
+		z-index: 99999;
 	}
 
 .ui-btn-inner {
